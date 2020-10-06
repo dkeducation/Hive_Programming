@@ -1,5 +1,50 @@
 **声明：此文档由DKE收集整理于网络，例题实例皆为原创，仅用于交流学习目的，资源以及代码请勿用作它途。**
 
+- [Internal table & External table implement](#internal-table---external-table-implement)
+  * [创建Internal table](#--internal-table)
+  * [向Internal table中插入数据](#-internal-table-----)
+  * [创建 External table](#---external-table)
+  * [HQL Script的编写与使用](#hql-script------)
+  * [数据类型](#----)
+  * [Summary](#summary)
+  * [例](#-)
+- [HQL中标准SQL不同/没有的语法](#hql---sql--------)
+  * [JOIN](#join)
+  * [UNION & UNION ALL (并集)](#union---union-all-----)
+  * [INTERSECT (交集)](#intersect-----)
+  * [MINUS (差集)](#minus-----)
+  * [SORT BY](#sort-by)
+  * [DISTRIBUTE BY](#distribute-by)
+  * [CLUSTER BY](#cluster-by)
+  * [LIMIT](#limit)
+  * [例 {#例-1 .list-paragraph}](#------1-list-paragraph-)
+- [AGGREGATION](#aggregation)
+  * [GROUPING SET](#grouping-set)
+  * [ROLL UP](#roll-up)
+  * [CUBE](#cube)
+  * [例](#--1)
+- [WINDOW PARTITION](#window-partition)
+  * [语法](#--)
+  * [Function](#function)
+    + [**AGGREGATES FUNCTION**](#--aggregates-function--)
+    + [**ANALYTICS FUNCTION**](#--analytics-function--)
+    + [**WINDOW FUNCTION**](#--window-function--)
+  * [例 {#例-3 .list-paragraph}](#------3-list-paragraph-)
+- [Partition](#partition)
+  * [建立一个分区表](#-------)
+  * [创建分区](#----)
+  * [查看已创建的分区](#--------)
+  * [往指定分区中插入数据](#----------)
+  * [动态建立分区参数](#--------)
+  * [例 {#例-4 .list-paragraph}](#------4-list-paragraph-)
+- [Bucket](#bucket)
+  * [创建Bucket表](#--bucket-)
+  * [例 {#例-5 .list-paragraph}](#------5-list-paragraph-)
+- [Reference](#reference)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 Internal table & External table implement
 =========================================
 
