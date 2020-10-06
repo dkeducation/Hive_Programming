@@ -42,7 +42,7 @@
   * [例 {#例-5 .list-paragraph}](#------5-list-paragraph-)
 - [Reference](#reference)  
 
-**声明：此文档由DKE编写整理, 例题实例皆为原创，部分信息收集于网络，仅用于交流学习目的，资源以及代码请勿用作它途。**
+**声明：此文档由DKE编写整理, 例题实例皆为原创，部分信息参考于网络，仅用于交流学习目的，资源以及代码请勿用作它途。**
 **如内容有纰漏欢迎指正**
 
 Internal table & External table implement
