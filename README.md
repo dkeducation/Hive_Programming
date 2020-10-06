@@ -265,7 +265,7 @@ LIMIT
 ```
 返回结果的前N行
 
-例 {#例-1 .list-paragraph}
+例
 --
 
 -   通过LEFT SEMI JOIN实现两个表的交集
@@ -476,7 +476,7 @@ bool: 是否忽略空值
 
 6)  **LAST_VALUE**(field, bool): 取当前分组排序后最后行field中的值
 
-例 {#例-3 .list-paragraph}
+例
 --
 
 ![](media/image12.png)
@@ -582,7 +582,7 @@ set hive.exec.dynamic.partition.mode = nonstrict
 
 set hive.exec.max.dynamic.partitions=5
 
-例 {#例-4 .list-paragraph}
+例
 --
 
 ![](media/image13.png)
@@ -608,7 +608,7 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 
 用hash结果除以桶的个数做取余运算的方式来分桶，保证了每个桶中都有数据，但每个桶中的数据条数不一定相等。
 
-例 {#例-5 .list-paragraph}
+例
 --
 
 ![](media/image13.png)
