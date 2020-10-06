@@ -324,15 +324,12 @@ WINDOW PARTITION
 语法
 ----
 
-SELECT \[field1\], \[field2\] ...,
-
-\[function 1\] **OVER** (PARTITION BY \[field\] ORDER BY \[field\] ROWS
-\[Range\]),
-
-\[function 2\] **OVER** (PARTITION BY \[field\] ORDER BY \[field\] ROWS
-\[Range\])
-
-FROM \[table name\]
+>SELECT \[field1\], \[field2\] ...,  
+>\[function 1\] **OVER** (PARTITION BY \[field\] ORDER BY \[field\] ROWS  
+>\[Range\]),  
+>\[function 2\] **OVER** (PARTITION BY \[field\] ORDER BY \[field\] ROWS  
+>\[Range\])  
+>FROM \[table name\]
 
 Function
 --------
@@ -357,6 +354,7 @@ Function
 
 ![](media/image6.png)
 
+```sql
 Sum(cost) over (partition by customer_key order by year,month,day rows
 between current row and 1 preceding
 
@@ -365,7 +363,7 @@ unbounded preceding) //default
 
 Sum(cost) over (partition by customer_key order by year,month,day rows
 between current row and unbounded following)
-
+```
 **\* Window Range:** 对于AGGREGATES FUNCTION
 
 \(n\) PRECEDING：往前\
