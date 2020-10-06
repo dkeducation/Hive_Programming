@@ -349,13 +349,13 @@ Function
 
 5)  **AVG**(Field)
 
-![](media/image3.png){width="9.105437445319335in"
+![](media/image3.png)
 
-![](media/image4.png){width="9.053346456692914in"
+![](media/image4.png)
 
-![](media/image5.png){width="9.042928696412948in"
+![](media/image5.png)
 
-![](media/image6.png){width="9.00125656167979in"
+![](media/image6.png)
 
 Sum(cost) over (partition by customer_key order by year,month,day rows
 between current row and 1 preceding
@@ -436,10 +436,8 @@ bool: 是否忽略空值
 例 {#例-3 .list-paragraph}
 --
 
-![](media/image12.png){width="3.3867924321959757in"
-height="4.067317366579178in"}
-![](media/image2.png){width="2.4065857392825896in"
-height="2.239896106736658in"}
+![](media/image12.png)
+![](media/image2.png)
 
 -   **对每一个顾客ID, 产品ID, 购买量, 打印出该城市中最大的购买量,
     该年份中开销最高的COST.**
@@ -544,8 +542,7 @@ set hive.exec.max.dynamic.partitions=5
 例 {#例-4 .list-paragraph}
 --
 
-![](media/image13.png){width="2.3232403762029747in"
-height="2.1044608486439196in"}
+![](media/image13.png)
 
 建立一个Partition Table, 按年份分区, 并插入数据
 
@@ -571,12 +568,11 @@ ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 例 {#例-5 .list-paragraph}
 --
 
-![](media/image13.png){width="2.3232403762029747in"
-height="2.1044608486439196in"}
+![](media/image13.png)
 
 建立一个Bucket Table, 按年份分块, 并插入数据
 
-参考
+Reference
 ====
 
 <https://docs.oracle.com/cd/E41507_01/epm91pbr3/eng/epm/penw/concept_MultidimensionalWarehouseMDW-9912e0.html>
