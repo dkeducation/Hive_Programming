@@ -8,7 +8,7 @@
   * [数据类型](#----)
   * [Summary](#summary)
   * [例](#-)
-- [HQL中标准SQL不同/没有的语法](#hql---sql--------)
+- [HQL特殊语法](#hql---sql--------)
   * [JOIN](#join)
   * [UNION & UNION ALL (并集)](#union---union-all-----)
   * [INTERSECT (交集)](#intersect-----)
@@ -171,7 +171,7 @@ location '/user/path...' #指定hive上表在hdfs上的存储路径，默认的�
 
 -   删除External Table 后查看数据是否还存在
 
-HQL中标准SQL不同/没有的语法
+HQL特殊语法
 ===========================
 
 JOIN
@@ -369,12 +369,12 @@ WINDOW PARTITION
 语法
 ----
 
->SELECT \[field1\], \[field2\] ...,  
->\[function 1\] **OVER** (PARTITION BY \[field\] ORDER BY \[field\] ROWS  
->\[Range\]),  
->\[function 2\] **OVER** (PARTITION BY \[field\] ORDER BY \[field\] ROWS  
->\[Range\])  
->FROM \[table name\]
+```sql
+SELECT [field1], [field2] …, 
+[function 1] OVER (PARTITION BY [field] ORDER BY [field] ROWS [Range]),
+[function 2] OVER (PARTITION BY [field] ORDER BY [field] ROWS [Range])
+FROM [table name]
+```
 
 Function
 --------
